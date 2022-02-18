@@ -7,7 +7,7 @@ repo_url = "jufo-oeff-5"
 
 def get_new_version(old_version) -> list:
     if old_version[-1] <= 9:
-        return old_version + [0, 0, 1]
+        return [old_version[0], old_version[1], old_version[2] + 1]
 
     if old_version[-2] <= 9: 
         return [old_version[0], old_version[1] + 1, 0]
