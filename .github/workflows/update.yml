@@ -33,7 +33,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         id: update_addon
         with:
-          commit_message: ${{ steps.prepare_release.outputs.RELEASE_TITLE }}
+          commit_message: Update the addon.
 
       - name: Draft Release
         id: draft_release
